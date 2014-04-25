@@ -1,0 +1,7 @@
+#!/bin/sh
+g++ -O2 TestCaseGenerator.cpp -o TestCaseGenerator
+./TestCaseGenerator > TestCases
+g++ -O2 -D FASTIN bignum.cpp -o bignum
+./bignum < TestCases > cppOutput
+python ./bignumPython.py < TestCases > pythonOutput
+diff -s -q cppOutput pythonOutput
