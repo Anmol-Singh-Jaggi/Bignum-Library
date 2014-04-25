@@ -2,7 +2,7 @@
 #define fastin std::ios::sync_with_stdio(false);cin.tie(NULL)
 using namespace std;
 
-string rand_num(const int& size)
+string rand_num(const int& size)  // Returns a number having "size" digits at max.
 {
     string result((rand()%size)+1,'*');
     result[0]='0'+rand()%9+1;
