@@ -2,7 +2,7 @@
 #define fastin std::ios::sync_with_stdio(false);cin.tie(NULL)
 using namespace std;
 
-inline void stripZeroes(string& n)
+inline void stripZeroes(string& n)  // Remove all the zeroes at the beginning of "n"...
 {
     int i=0;
     while(i<(int)n.size()&&n[i]=='0')
