@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Description -:
 
 My Implementation of a Bignum Library using C++.
@@ -17,9 +16,3 @@ Testing -:
 
 Initiate testing by executing "TestScript" file.
 " ./TestScript "
-=======
-Bignum-Library
-==============
-
-A "Bignum" Library created using C++ that can handle arithmetic calculations of very large numbers.
->>>>>>> 54248b180e45fdaab7b605a3920aad5cb162ec07
