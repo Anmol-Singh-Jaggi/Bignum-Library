@@ -21,3 +21,11 @@ Testing -:
 
  - Initiate testing by executing "TestScript" file.
 " ./TestScript "
+
+To-do -:
+----------
+
+ - Make it a class.
+ - Improve testing procedure.
+ - Implement faster multiplication and division algorithms.
+ 
