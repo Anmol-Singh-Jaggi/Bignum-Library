@@ -2,7 +2,7 @@
 Description -:
 --------------
 
- - My Implementation of a Bignum Library using C++.  
+ - An Implementation of a Bignum Library using C++.  
  - A Test Suite is also included in case if you want to modify my implementation and then check its correctness.
 
 Requirements -:
