@@ -1,0 +1,12 @@
+#!/bin/sh
+
+g++ -O2 test-case-generator.cpp -o test-case-generator
+./test-case-generator > test-cases
+
+g++ -O2 bignum.cpp -o bignum
+./bignum < test-cases > cpp-output
+
+python ./bignum-python.py < test-cases > python-output
+diff -s -q cpp-output python-output
+
+read -n1 -r -p "Press any key to continue..."
