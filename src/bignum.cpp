@@ -23,8 +23,12 @@ void StripZeroes( string& num )
 	{
 		i++;
 	}
-
 	num = num.substr( i );
+
+	if ( num.empty() )
+	{
+		num = "0";
+	}
 }
 
 // Add 2 numbers
@@ -52,11 +56,6 @@ string BigAdd( string num1, string num2 )
 	result[++i] = ( '0' + temp / 10 );
 
 	StripZeroes( result );
-
-	if ( result.empty() )
-	{
-		result = "0";
-	}
 
 	return result;
 }
@@ -89,11 +88,6 @@ string BigSubtract( string num1, string num2 )
 
 	StripZeroes( result );
 
-	if ( result.empty() )
-	{
-		result = "0";
-	}
-
 	return result;
 }
 
@@ -114,11 +108,6 @@ string BigMulChar( const string& num1, const char& num2 )
 	result[++i] = ( '0' + prod / 10 );
 
 	StripZeroes( result );
-
-	if ( result.empty() )
-	{
-		result = "0";
-	}
 
 	return result;
 }
@@ -142,11 +131,6 @@ string BigMul( string num1, string num2 )
 	}
 
 	StripZeroes( result );
-
-	if ( result.empty() )
-	{
-		result = "0";
-	}
 
 	return result;
 }
@@ -180,7 +164,7 @@ int BigMod( const string& num, const int& mod )
 	return result;
 }
 
-// Returns num1 ^ num2 ( Recursive )
+// Returns num1 ^ num2
 string BigPow( string num1, string num2 )
 {
 	if ( num2 == "0" )
@@ -201,7 +185,7 @@ string BigPow( string num1, string num2 )
 
 }
 
-// Returns num1 ^ num2 ( Iterative )
+// Returns num1 ^ num2
 string BigPow( string num1, int num2 )
 {
 	if ( num2 == 0 )
