@@ -7,7 +7,7 @@
  - Python interpreter ( Optional; For testing only )  
 
 **Testing -:**
- - Initiate testing by executing the "test-script" file.
+ - Initiate testing by executing the *`test-script`* file.
 
 **To-do -:**
  - Encapsulate it in a class.
